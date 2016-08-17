@@ -1,0 +1,6 @@
+framework module Pods_LunchUp {
+  umbrella header "Pods-LunchUp-umbrella.h"
+
+  export *
+  module * { export * }
+}

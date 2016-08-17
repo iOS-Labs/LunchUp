@@ -7,15 +7,24 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let parseAppId : String = "LunchUp"
+    let parseServer : String = "https://lunchup-parse.herokuapp.com/parse/"
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        Parse.initializeWithConfiguration(
+            ParseClientConfiguration(block: { (configuration:ParseMutableClientConfiguration) -> Void in
+                configuration.applicationId = self.parseAppId
+                configuration.clientKey = nil  // set to nil assuming you have not set clientKey
+                configuration.server = self.parseServer
+            })
+        )
         return true
     }
 
