@@ -11,11 +11,14 @@ import Parse
 
 class LoginViewController: UIViewController {
 
+    let linkedinHelper = LinkedinSwiftHelper(configuration: LinkedinSwiftConfiguration(clientId: "75biesin7sa2qm", clientSecret: "E8uCyCFjOcWJMkPf", state: "DLKDJF46ikMMZADfdfds", permissions: ["r_basicprofile", "r_emailaddress"], redirectUrl: "https://www.lunchup.com"))
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -23,7 +26,10 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onLogin(sender: UIButton) {
+        loginWithLinkedIn()
+        requestLinkedInProfile()
         myMethod()
+        
     }
     func myMethod() {
         let user = PFUser()
@@ -43,6 +49,39 @@ class LoginViewController: UIViewController {
                 print("success")
             }
         }
+    }
+    
+    func requestLinkedInProfile() {
+        
+        linkedinHelper.requestURL("https://api.linkedin.com/v1/people/~:(id,first-name,last-name,email-address,picture-url,picture-urls::(original),positions,date-of-birth,phone-numbers,location)?format=json", requestType: LinkedinSwiftRequestGet, success: { (response) -> Void in
+            
+            self.writeConsoleLine("Request success with response: \(response)")
+            
+        }) { [unowned self] (error) -> Void in
+            
+            self.writeConsoleLine("Encounter error: \(error.localizedDescription)")
+        }
+    }
+    
+    func loginWithLinkedIn() {
+    
+    /**
+     *  Yeah, Just this simple, try with Linkedin installed and without installed
+     *
+     *   Check installed if you want to do different UI: linkedinHelper.isLinkedinAppInstalled()
+     *   Access token later after login: linkedinHelper.lsAccessToken
+     */
+    
+    linkedinHelper.authorizeSuccess({ [unowned self] (lsToken) -> Void in
+    
+    self.writeConsoleLine("Login success lsToken: \(lsToken)")
+    }, error: { [unowned self] (error) -> Void in
+    
+    self.writeConsoleLine("Encounter error: \(error.localizedDescription)")
+    }, cancel: { [unowned self] () -> Void in
+    
+    self.writeConsoleLine("User Cancelled!")
+    })
     }
 
     /*

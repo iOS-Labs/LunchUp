@@ -7,5 +7,6 @@ target 'LunchUp' do
 
   # Pods for LunchUp
 pod ‘Parse’
+pod 'LinkedinSwift', '~> 1.6.5'
 
 end
