@@ -12,6 +12,7 @@ import Parse
 class LoginViewController: UIViewController {
 
     let linkedinHelper = LinkedinSwiftHelper(configuration: LinkedinSwiftConfiguration(clientId: "75biesin7sa2qm", clientSecret: "E8uCyCFjOcWJMkPf", state: "DLKDJF46ikMMZADfdfds", permissions: ["r_basicprofile", "r_emailaddress"], redirectUrl: "https://www.lunchup.com"))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,16 +27,14 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onLogin(sender: UIButton) {
-<<<<<<< Updated upstream
         loginWithLinkedIn()
         requestLinkedInProfile()
-        myMethod()
-        
-=======
+        signUpWithParse()
         loginWithParse()
->>>>>>> Stashed changes
     }
-    func myMethod() {
+    
+    
+    func signUpWithParse() {
         let user = PFUser()
         user.username = "123"
         user.password = "1234"
@@ -57,9 +56,8 @@ class LoginViewController: UIViewController {
         }
     }
     
-<<<<<<< Updated upstream
     func requestLinkedInProfile() {
-        
+    
         linkedinHelper.requestURL("https://api.linkedin.com/v1/people/~:(id,first-name,last-name,email-address,picture-url,picture-urls::(original),positions,date-of-birth,phone-numbers,location)?format=json", requestType: LinkedinSwiftRequestGet, success: { (response) -> Void in
             
             self.writeConsoleLine("Request success with response: \(response)")
@@ -80,17 +78,17 @@ class LoginViewController: UIViewController {
      */
     
     linkedinHelper.authorizeSuccess({ [unowned self] (lsToken) -> Void in
-    
-    self.writeConsoleLine("Login success lsToken: \(lsToken)")
-    }, error: { [unowned self] (error) -> Void in
-    
-    self.writeConsoleLine("Encounter error: \(error.localizedDescription)")
-    }, cancel: { [unowned self] () -> Void in
-    
-    self.writeConsoleLine("User Cancelled!")
-    })
+            
+            self.writeConsoleLine("Login success lsToken: \(lsToken)")
+            }, error: { [unowned self] (error) -> Void in
+                
+                self.writeConsoleLine("Encounter error: \(error.localizedDescription)")
+            }, cancel: { [unowned self] () -> Void in
+                
+                self.writeConsoleLine("User Cancelled!")
+            })
     }
-=======
+
     func loginWithParse() {
         PFUser.logInWithUsernameInBackground("123", password:"1234") {
             (user: PFUser?, error: NSError?) -> Void in
@@ -108,7 +106,6 @@ class LoginViewController: UIViewController {
             }
         }
     }
->>>>>>> Stashed changes
 
     /*
     // MARK: - Navigation
