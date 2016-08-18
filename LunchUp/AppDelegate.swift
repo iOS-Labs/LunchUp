@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import LinkedinSwift
 
 
 @UIApplicationMain
