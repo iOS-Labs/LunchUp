@@ -26,16 +26,22 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onLogin(sender: UIButton) {
+<<<<<<< Updated upstream
         loginWithLinkedIn()
         requestLinkedInProfile()
         myMethod()
         
+=======
+        loginWithParse()
+>>>>>>> Stashed changes
     }
     func myMethod() {
         let user = PFUser()
         user.username = "123"
         user.password = "1234"
         user.email = "aaa@bbb.com"
+        
+        user["gender"] = "male"
         // other fields can be set just like with PFObject
         user["phone"] = "415-392-0202"
         
@@ -51,6 +57,7 @@ class LoginViewController: UIViewController {
         }
     }
     
+<<<<<<< Updated upstream
     func requestLinkedInProfile() {
         
         linkedinHelper.requestURL("https://api.linkedin.com/v1/people/~:(id,first-name,last-name,email-address,picture-url,picture-urls::(original),positions,date-of-birth,phone-numbers,location)?format=json", requestType: LinkedinSwiftRequestGet, success: { (response) -> Void in
@@ -83,6 +90,25 @@ class LoginViewController: UIViewController {
     self.writeConsoleLine("User Cancelled!")
     })
     }
+=======
+    func loginWithParse() {
+        PFUser.logInWithUsernameInBackground("123", password:"1234") {
+            (user: PFUser?, error: NSError?) -> Void in
+            if user != nil {
+//                self.performSegueWithIdentifier("LoginToChat", sender: self)
+                let userInfo = PFUser.currentUser()
+                print(userInfo)
+            } else {
+                // The login failed. Check error to see why.
+                let errorString = error!.userInfo["error"] as? NSString
+                // Show Alert and let the user try again.
+                print("error\(errorString)")
+//                self.showError(String(errorString!))
+                
+            }
+        }
+    }
+>>>>>>> Stashed changes
 
     /*
     // MARK: - Navigation
