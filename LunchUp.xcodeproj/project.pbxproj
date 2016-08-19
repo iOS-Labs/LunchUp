@@ -9,10 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F0BC3721D6694130089469A /* Profile.Storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0BC3701D6694130089469A /* Profile.Storyboard */; };
 		0F0BC3751D66946B0089469A /* Filters.Storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0BC3731D66946B0089469A /* Filters.Storyboard */; };
-		0F0BC3781D6694810089469A /* Bubble.Storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0BC3761D6694810089469A /* Bubble.Storyboard */; };
 		0F0BC37B1D669CCD0089469A /* History.Storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0BC3791D669CCD0089469A /* History.Storyboard */; };
-		0F0BC37D1D669CD80089469A /* Chat.Storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0BC37C1D669CD80089469A /* Chat.Storyboard */; };
-		0F0BC37F1D66A0320089469A /* Food.Storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0BC37E1D66A0320089469A /* Food.Storyboard */; };
 		0F63B8811D63E97F003D9B50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63B8801D63E97F003D9B50 /* AppDelegate.swift */; };
 		0F63B8831D63E97F003D9B50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63B8821D63E97F003D9B50 /* ViewController.swift */; };
 		0F63B8861D63E97F003D9B50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F63B8841D63E97F003D9B50 /* Main.storyboard */; };
@@ -22,15 +19,17 @@
 		20A56EE7CA1F06096CAB31F9 /* Pods_LunchUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E538D0E62745EE9EC9C062F8 /* Pods_LunchUp.framework */; };
 		254D594C1D65596800F2A72F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254D594B1D65596800F2A72F /* User.swift */; };
 		254D594E1D655CD200F2A72F /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254D594D1D655CD200F2A72F /* Filter.swift */; };
+		804087911D67AE1300834B45 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804087901D67AE1300834B45 /* ProfileViewController.swift */; };
+		804087931D67AE5300834B45 /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804087921D67AE5300834B45 /* FiltersViewController.swift */; };
+		804087951D67AE7400834B45 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804087941D67AE7400834B45 /* HistoryViewController.swift */; };
+		8040879B1D67B45600834B45 /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8040879A1D67B45600834B45 /* TinderViewController.swift */; };
+		804087A11D67B6C300834B45 /* Tinder.Storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8040879F1D67B6C300834B45 /* Tinder.Storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F0BC3711D6694130089469A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.Storyboard; sourceTree = "<group>"; };
 		0F0BC3741D66946B0089469A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Filters.Storyboard; sourceTree = "<group>"; };
-		0F0BC3771D6694810089469A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Bubble.Storyboard; sourceTree = "<group>"; };
 		0F0BC37A1D669CCD0089469A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/History.Storyboard; sourceTree = "<group>"; };
-		0F0BC37C1D669CD80089469A /* Chat.Storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chat.Storyboard; sourceTree = "<group>"; };
-		0F0BC37E1D66A0320089469A /* Food.Storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Food.Storyboard; sourceTree = "<group>"; };
 		0F63B87D1D63E97F003D9B50 /* LunchUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunchUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F63B8801D63E97F003D9B50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F63B8821D63E97F003D9B50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +41,11 @@
 		254D594B1D65596800F2A72F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		254D594D1D655CD200F2A72F /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		785B24A04296A514DEB736BD /* Pods-LunchUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LunchUp/Pods-LunchUp.release.xcconfig"; sourceTree = "<group>"; };
+		804087901D67AE1300834B45 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		804087921D67AE5300834B45 /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
+		804087941D67AE7400834B45 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		8040879A1D67B45600834B45 /* TinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
+		804087A01D67B6C300834B45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Tinder.Storyboard; sourceTree = "<group>"; };
 		A29452002E98E5D7614C44A8 /* Pods-LunchUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LunchUp/Pods-LunchUp.debug.xcconfig"; sourceTree = "<group>"; };
 		E538D0E62745EE9EC9C062F8 /* Pods_LunchUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunchUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -79,17 +83,11 @@
 		0F63B87F1D63E97F003D9B50 /* LunchUp */ = {
 			isa = PBXGroup;
 			children = (
+				8040879C1D67B65800834B45 /* Storyboard */,
+				8040878F1D67ADE400834B45 /* View Controllers */,
 				254D594A1D65592C00F2A72F /* Models */,
 				0F63B8801D63E97F003D9B50 /* AppDelegate.swift */,
-				0F63B8921D640CF5003D9B50 /* LoginViewController.swift */,
 				0F63B8821D63E97F003D9B50 /* ViewController.swift */,
-				0F63B8841D63E97F003D9B50 /* Main.storyboard */,
-				0F0BC3701D6694130089469A /* Profile.Storyboard */,
-				0F0BC3731D66946B0089469A /* Filters.Storyboard */,
-				0F0BC3791D669CCD0089469A /* History.Storyboard */,
-				0F0BC37C1D669CD80089469A /* Chat.Storyboard */,
-				0F0BC37E1D66A0320089469A /* Food.Storyboard */,
-				0F0BC3761D6694810089469A /* Bubble.Storyboard */,
 				0F63B8871D63E97F003D9B50 /* Assets.xcassets */,
 				0F63B8891D63E97F003D9B50 /* LaunchScreen.storyboard */,
 				0F63B88C1D63E97F003D9B50 /* Info.plist */,
@@ -121,6 +119,30 @@
 				785B24A04296A514DEB736BD /* Pods-LunchUp.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8040878F1D67ADE400834B45 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				804087901D67AE1300834B45 /* ProfileViewController.swift */,
+				804087921D67AE5300834B45 /* FiltersViewController.swift */,
+				804087941D67AE7400834B45 /* HistoryViewController.swift */,
+				0F63B8921D640CF5003D9B50 /* LoginViewController.swift */,
+				8040879A1D67B45600834B45 /* TinderViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8040879C1D67B65800834B45 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0F63B8841D63E97F003D9B50 /* Main.storyboard */,
+				0F0BC3701D6694130089469A /* Profile.Storyboard */,
+				0F0BC3731D66946B0089469A /* Filters.Storyboard */,
+				0F0BC3791D669CCD0089469A /* History.Storyboard */,
+				8040879F1D67B6C300834B45 /* Tinder.Storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,13 +208,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F63B88B1D63E97F003D9B50 /* LaunchScreen.storyboard in Resources */,
+				804087A11D67B6C300834B45 /* Tinder.Storyboard in Resources */,
 				0F63B8881D63E97F003D9B50 /* Assets.xcassets in Resources */,
 				0F0BC37B1D669CCD0089469A /* History.Storyboard in Resources */,
 				0F0BC3751D66946B0089469A /* Filters.Storyboard in Resources */,
 				0F0BC3721D6694130089469A /* Profile.Storyboard in Resources */,
-				0F0BC3781D6694810089469A /* Bubble.Storyboard in Resources */,
-				0F0BC37F1D66A0320089469A /* Food.Storyboard in Resources */,
-				0F0BC37D1D669CD80089469A /* Chat.Storyboard in Resources */,
 				0F63B8861D63E97F003D9B50 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,11 +272,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				804087911D67AE1300834B45 /* ProfileViewController.swift in Sources */,
+				8040879B1D67B45600834B45 /* TinderViewController.swift in Sources */,
 				254D594C1D65596800F2A72F /* User.swift in Sources */,
+				804087931D67AE5300834B45 /* FiltersViewController.swift in Sources */,
 				254D594E1D655CD200F2A72F /* Filter.swift in Sources */,
 				0F63B8931D640CF5003D9B50 /* LoginViewController.swift in Sources */,
 				0F63B8831D63E97F003D9B50 /* ViewController.swift in Sources */,
 				0F63B8811D63E97F003D9B50 /* AppDelegate.swift in Sources */,
+				804087951D67AE7400834B45 /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,14 +301,6 @@
 				0F0BC3741D66946B0089469A /* Base */,
 			);
 			name = Filters.Storyboard;
-			sourceTree = "<group>";
-		};
-		0F0BC3761D6694810089469A /* Bubble.Storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F0BC3771D6694810089469A /* Base */,
-			);
-			name = Bubble.Storyboard;
 			sourceTree = "<group>";
 		};
 		0F0BC3791D669CCD0089469A /* History.Storyboard */ = {
@@ -309,6 +325,14 @@
 				0F63B88A1D63E97F003D9B50 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8040879F1D67B6C300834B45 /* Tinder.Storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				804087A01D67B6C300834B45 /* Base */,
+			);
+			name = Tinder.Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

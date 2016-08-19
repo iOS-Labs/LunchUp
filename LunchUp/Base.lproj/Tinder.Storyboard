@@ -5,23 +5,23 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--History View Controller-->
-        <scene sceneID="gU8-NM-Vql">
+        <!--Tinder View Controller-->
+        <scene sceneID="8bn-oS-a6M">
             <objects>
-                <viewController id="eln-sd-h14" customClass="HistoryViewController" customModule="LunchUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sqs-Go-P5N" customClass="TinderViewController" customModule="LunchUp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="QEW-UV-ygg"/>
-                        <viewControllerLayoutGuide type="bottom" id="Lki-Oc-oyb"/>
+                        <viewControllerLayoutGuide type="top" id="fXT-ec-XE5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gi3-lS-zbi"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VMW-Zc-Sjy">
+                    <view key="view" contentMode="scaleToFill" id="ZUc-Ro-4Vc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lfZ-EU-t37" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cd8-es-6HX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-164.26666666666665" y="-260.33333333333331"/>
+            <point key="canvasLocation" x="354" y="706"/>
         </scene>
     </scenes>
 </document>
