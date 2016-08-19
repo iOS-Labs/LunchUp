@@ -10,7 +10,6 @@ import UIKit
 import Parse
 import LinkedinSwift
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -27,6 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = self.parseServer
             })
         )
+        
+        User.registerSubclass()
+        
         return true
     }
 

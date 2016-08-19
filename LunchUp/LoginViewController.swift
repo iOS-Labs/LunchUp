@@ -28,22 +28,24 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onLogin(sender: UIButton) {
-        loginWithLinkedIn()
-        requestLinkedInProfile()
-//        signUpWithParse()
+//        loginWithLinkedIn()
+//        requestLinkedInProfile()
+        signUpWithParse()
 //        loginWithParse()
     }
     
     
     func signUpWithParse() {
-        let user = PFUser()
-        user.username = "123"
+        let user = User()
+        user.username = "abc"
         user.password = "1234"
-        user.email = "aaa@bbb.com"
+        user.email = "aa1a@bbb.com"
         
         user["gender"] = "male"
         // other fields can be set just like with PFObject
         user["phone"] = "415-392-0202"
+        
+        user.industry = "Engineering"
         
         user.signUpInBackgroundWithBlock {
             (succeeded: Bool, error: NSError?) -> Void in
